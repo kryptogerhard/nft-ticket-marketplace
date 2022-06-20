@@ -1,1 +1,8 @@
-# nft-ticket-marketplace
+# Nft ticket marketplace
+The implementation is built out by using a solidity development environment called Hardhat together with web application framework Next.js, with help of Ethereum web client Library Ethers.js and file storage, which is commonly used for storing NFTs, IPFS.
+
+At the core of the application stand two smart contracts that connect IPFS, the localhost blockchain, and the web interface. The NFT contract is developed for the mintage of NFT tickets only. Its fundamentals are based on ERC721 standards which are obtained from OpenZeppelin. The NFTticket_marketplace contract allows anybody to mint tickets and lists them on the platform. When an event organiser wants to create tickets for his event for sale, the ownership of newly NFTs-based tickets will be transferred to this contract. On the other hand, when a ticket purchaser pays for the ticket, the crypto will be transferred to the ticket creator and the ticket to the buyer. The buyer has also the possibility to sell the ticket back if he or she wishes not to attend the event anymore.
+
+A customer can log in to the web application framework with his Metamask wallet and directly use it. He can choose a file, add a description of the event, mint it as an NFT ticket, and immediately list it on the marketplace. The creator sees the new-minted tickets in the “Creator dashboard”. When you purchase a ticket, you can see it in the “My tickets” section. When you decide to resell it, you can set a price and list it on the marketplace again. All processes are depended on gas fees only and the marketplace owner does not charge any special fee.
+
+Disclaimer: The basis of the marketplace platform is established on the work of developer Nader Dabit (https://dev.to/edge-and-node/building-scalable-full-stack-apps-on-ethereum-with-polygon-2cfb).
